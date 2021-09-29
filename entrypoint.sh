@@ -65,7 +65,7 @@ do
     wait_for_it ${i}
 done
 
-if [$MODE -e "region"];
+if [ "$MODE" = "region" ];
 then
   /opt/hbase-$HBASE_VERSION/bin/hbase regionserver start
 else
