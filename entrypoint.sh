@@ -67,7 +67,7 @@ done
 
 if [$MODE -e "region"];
 then
-  /opt/hbase-$HBASE_VERSION/bin/hbase master start
-else
   /opt/hbase-$HBASE_VERSION/bin/hbase regionserver start
+else
+  /opt/hbase-$HBASE_VERSION/bin/hbase master start
 fi
